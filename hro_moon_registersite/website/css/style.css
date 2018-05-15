@@ -1,0 +1,306 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:700,400,200);
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clearfix {
+    /*display: inline-block;*/
+}
+
+html[xmlns] .clearfix {
+    display: block;
+}
+
+* html .clearfix {
+    height: 1%;
+}
+
+body {
+    background-color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+.error {
+    padding: 5px;
+    color: black;
+    font-weight: 400;
+    border: 3px solid #ff0517;
+    background-color: #ff9e00;
+    width: 96%;
+    margin: 0 auto;
+}
+
+.wrapper {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.content {
+
+}
+
+.pageHeader {
+    font-weight: 700;
+    color: #1278BE;
+    font-size: 64px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h3 {
+    color: #535353;
+    font-size: 21px;
+    font-weight: 200;
+    margin: 12px 0;
+}
+
+.formSpace {
+    border-bottom: 1px solid lightgrey;
+    height: 40px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.formItem {
+
+}
+
+.formItem input[type="text"], .formItem input[type="number"],
+.formItem input[type="email"], .formItem input[type="date"],
+.formItem input[type="password"], #sex, #BSN_OPT_MSG, #Martial,
+.toolbar input[type="text"], .toolbar input[type="button"], .selectSearch {
+    width: 472px;
+    height: 22px;
+    padding: 12px;
+    border-radius: 3px;
+    border: solid 1px #F0F0F0;
+    margin: 7px 3px;
+
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.formItem input[type="checkbox"] {
+
+}
+
+.formItem input[type="radio"] {
+    position: relative;
+    top: -2px;
+}
+
+.formItem input[type="text"]:focus, .formItem input[type="number"]:focus,
+.formItem input[type="email"]:focus, .formItem input[type="date"]:focus,
+.formItem input[type="password"]:focus, #sex:focus, #BSN_OPT_MSG:focus, #Martial:focus,
+.toolbar input:focus, .selectSearch:focus, .formItemText textarea:focus {
+    outline: none;
+    border-color: #1278BE !important;
+}
+
+.formItem input[type="text"]:hover, .formItem input[type="number"]:hover,
+.formItem input[type="email"]:hover, .formItem input[type="date"]:hover,
+.formItem input[type="password"]:hover, #sex:hover, #BSN_OPT_MSG:hover, #Martial:hover,
+.toolbar input:hover, .selectSearch:hover, .formItemText textarea:hover {
+    border-color: #f4d200 !important;
+}
+
+.formItemText {
+
+}
+
+.formItemText textarea {
+    width: 472px;
+    height: 100px;
+    padding: 12px;
+    border-radius: 2px;
+    border: solid 1px #F0F0F0;
+    margin: 7px 3px;
+
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.formItem.short input[type="text"], .formItem.short input[type="number"],
+.formItem.short input[type="email"], .formItem.short input[type="date"] {
+    width: 280px;
+}
+
+button, input[type="submit"], input[type="button"] {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 26px;
+
+    border: 0;
+    border-radius: 3px;
+    padding: 6px 12px;
+    margin: 7px 3px;
+
+    background-color:#1278BE;
+    color: white;
+}
+
+.toolbar input[type="button"] {
+    height: 47px;
+    width: auto;
+}
+
+#submitMessage, #errorMsg {
+    padding: 9px;
+    border-radius: 3px;
+    background:#fff8c4;
+    border:1px solid #f2c779;
+
+}
+
+.registerName {
+    padding: 5px;
+}
+
+.registerCollection:hover, .tagSelection:hover {
+    background-color: #1278BE !important;
+    color: white;
+}
+
+.registerCollection a{
+    display: block;
+    float: left;
+}
+
+.registerCollection:hover a .registerName{
+    color: #f4d200;
+    text-decoration: underline;
+}
+
+.registerCollection .tags {
+    float: right;
+}
+
+.registerCollection .tags .tag {
+    float: left;
+    margin: 3.4px 6px 0 0;
+    padding: 3px;
+    border-radius: 4px;
+
+    font-size: 13px;
+    background-color: lightgrey;
+    color: #1278BE;
+    text-decoration: underline;
+}
+
+.registerCollection:hover .tags .tag {
+    background-color: darkgrey;
+}
+
+.registerCollection .tags .tag:hover {
+    color: #f4d200;
+    cursor: pointer;
+}
+
+td {
+    min-width: 550px;
+    padding: 5px;
+}
+
+.shortList td {
+    min-width: 271px;
+}
+
+tr:nth-child(even), .registerCollection:nth-child(even), .tagSelection:nth-child(even) {
+    background-color: #eee;
+}
+
+.unchecked:nth-child(even) {
+    background-color: #FF2400;
+}
+
+.unchecked:nth-child(odd) {
+    background-color: #FF6100;
+}
+
+tr:hover {
+    background-color: #1278BE;
+    color: white;
+}
+
+td:hover a {
+    color: #f4d200;
+}
+
+.navBar {
+    padding: 5px;
+}
+
+ a:visited, a{
+    color: #1278BE;
+}
+
+ a:hover, a:focus {
+    color: #f4d200;
+}
+
+.navBar li{
+    padding-right: 15px;
+    display: inline;
+}
+
+.registerView {
+
+}
+
+.tagSelection {
+    padding: 5px;
+    color: #1278BE;
+    text-decoration: underline;
+}
+
+.tagSelection:hover {
+    color: #f4d200;
+}
+
+.staticFooter {
+    border-top: 1px solid lightgrey;
+    padding-top: 5px;
+    width: 1140px;
+    height: 40px;
+    position: fixed;
+    bottom: 0;
+}

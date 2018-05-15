@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>A tiny poem for my dearest...</title>
+    <style type="text/css">
+        body {
+            background-color: #111;
+            font-family: monospace;
+            color: green;
+            text-shadow: 0px 0px 20px #00FF00;
+            font-size: 2em;
+        }
+
+        #hamburger {
+            width: 380px;
+            height: 200px;
+            margin: 30vh auto auto auto;
+        }
+    </style>
+</head>
+<body>
+<div id="hamburger"></div>
+<script type="text/javascript">
+    var c = {
+        domEl: $("#hamburger"),
+        html: function(h) {
+            if(h == null) {return $(this.domEl).html(); }
+                else {return $(this.domEl).html(h); }
+        },
+        print: function(char) {
+            var h = this.html(null);
+            var l = h.length;
+
+            if(char == "|") {
+                if(h[l - 1] == "_") {
+                    this.html(h.substr(0, l-1) + "<br>" + "_");
+                } else {
+                    this.html(h + "<br>");
+                }
+            } else {
+                if(h[l - 1] == "_") {
+                    this.html(h.substr(0, l-1) + char + "_");
+                } else {
+                    this.html(h + char);
+                }
+            }
+        },
+        blink: function() {
+            var h = this.html(null);
+            var l = h.length;
+            if(h[l - 1] == "_") {
+                this.html(h.substr(0, l-1));
+            } else {
+                this.html(h + "_");
+            }
+        },
+        blinkHolder: setInterval(function() {c.blink()}, 200),
+        remblink: function() {
+            var h = this.html(null);
+            var l = h.length;
+            if(h[l - 1] == "_") {
+                this.html(h.substr(0, l-1));
+            }
+        }
+    };
+
+    var world = {
+        s: "Roses are red|Violets are blue|My dearest pointer|Will always point to...|[",
+        r: false,
+        print: function() {
+            if(this.s.length > 0) {
+                if (this.s[0] == "[") {
+                    setTimeout(function() {
+                        clearInterval(c.blinkHolder);
+                        c.remblink();
+                        c.print("[SEGMENTATION FAULT]")
+                    }, 1000);
+                    return;
+                }
+
+                var t = 0;
+                switch (this.s[0]) {
+                    case " ":
+                        t = 600;
+                        break;
+                    case "|":
+                        t = 800;
+                        break;
+                    case ".":
+                        t = 1000;
+                        break;
+                    default:
+                        t = 350;
+                }
+
+                c.print(this.s[0]);
+                this.s = this.s.substr(1, this.s.length);
+
+                setTimeout(function() { world.print() }, t/2);
+            }
+        }
+    }
+
+    world.print();
+
+</script>
+</body>
+</html>

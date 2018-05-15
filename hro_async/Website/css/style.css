@@ -1,0 +1,38 @@
+.content {
+	padding: 5px 0;
+	width: 900px;
+	height: 100vh;
+	margin: 0 auto;
+
+	overflow-y: scroll;
+}
+
+.searchHeader{
+	margin: 0 auto;
+	width: 219.875px;
+	height: 230px;
+}
+
+.ajaxField{
+
+}
+
+.camper{
+	float: left;
+	width: 170px;
+	margin: 5px;
+}
+
+.camperImage{
+	display: block;
+}
+
+.camperImage img{
+	width: 170px;
+}
+
+.camperMeta{
+	width: 170px;
+	height: 127px;
+	display: none;
+}

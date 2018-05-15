@@ -1,0 +1,70 @@
+{
+  "css": [
+    {
+      "name":"reset",
+      "description":"Reset stylesheet so you can start from 0",
+      "link":"reset.css",
+      "contentVisibility" : ["*"]
+    },
+    {
+      "name":"style",
+      "description":"The main stylesheet",
+      "link":"style.css",
+      "contentVisibility" : ["*"]
+    },
+    {
+      "name":"Jquery ui css",
+      "description":"The jquery ui stylesheet",
+      "link":"ui-lightness/jquery-ui-1.9.2.custom.min.css",
+      "contentVisibility" : ["*"]
+    }
+  ],
+
+  "js": [
+    {
+      "name":"jquery",
+      "description":"The jquery library",
+      "link":"jquery.js",
+      "contentVisibility" : ["*"]
+    },
+    {
+      "name":"Date picker",
+      "description":"The jquery-ui plugin for the date-picker",
+      "link":"jquery-ui-1.9.2.custom.min.js",
+      "contentVisibility" : ["*"]
+    },
+    {
+      "name":"main",
+      "description":"The main javascript script",
+      "link":"main.js",
+      "contentVisibility" : ["*"]
+    }
+  ],
+
+  "content": [
+    {
+      "name":"header",
+      "description":"The header",
+      "link":"header.php",
+      "title" : ""
+    },
+    {
+      "name":"footer",
+      "description":"The footer",
+      "link":"footer.php",
+      "title" : ""
+    },
+    {
+      "name":"index",
+      "description":"The homepage",
+      "link":"index.php",
+      "title" : "Home"
+    },
+    {
+      "name":"Not found",
+      "description":"The not found",
+      "link":"notFound.php",
+      "title" : "404 Error"
+    }
+  ]
+}
